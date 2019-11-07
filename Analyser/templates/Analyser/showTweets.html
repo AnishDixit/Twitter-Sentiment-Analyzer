@@ -1,0 +1,35 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block content %}
+<!-- here we will but all the results of the analysis and all the tweets also -->
+<div style="text-align: center">
+		<h1 style="color: darkblue">HERE ARE THE RESULTS FOR YOUR SEARCH "{{ hashtag }}"</h1>
+		<h2 style="color: darkcyan"> The Polarity value for this is {{ tweet_polarity }}<br> this means that the polarity of this tweet is {{ polarityResult }} </h2>
+		<br>
+		<div>
+				{% for key,value in polarityIndividual.items %}
+					<div class="row">
+						<div class="col-8">
+							<p> {{ key }}</p>
+						</div>
+						<div class="col-4">
+								<p> {{ value }}</p>
+							</div>						
+					</div>
+				{% endfor %}
+		</div>
+
+ </div>
+ <!-- <div class="row"> -->
+	 <!-- <div class="col-6"> -->
+		<img src="/{{ figNameBarchart }}"/>
+	 <!-- </div> -->
+	 <!-- <div class="col-6"> -->
+		<img src="/{{ figNamePiechart }}"/>
+	 <!-- </div> -->
+ <!-- </div> -->
+ <div style="text-align: center">
+	<p>DO YOU WANT TO GIVE FEEDBACK?</p>
+	<a href=" {% url 'Dashboard:feedback' %}">click here!</a>
+ </div>
+ {% endblock %}	

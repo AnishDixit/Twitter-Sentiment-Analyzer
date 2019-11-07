@@ -1,0 +1,24 @@
+{% extends 'base_layout.html' %}
+
+
+{% block content %}
+{% block updateProfile %}
+{% endblock %}
+       
+       <div class="profile-detail">           
+           <div class="profile"> 
+             <img src="{{ user.profile.Profile_Pic.url }}"/>
+                <h2>Profile of    {{ user.profile.Username }} </h2>
+                <p>Name:  {{ user.profile.First_Name}}&nbsp;{{user.profile.Last_Name }}</p>
+                <p>Email Address:  {{ user.profile.Email_Address }}</p>
+                <p>Age:  {{ user.profile.Age }}</p>
+                <p>{{ user.profile.Profile_Pic.url }}</p>
+
+           </div> 
+           {% if request.path == "/accounts/profile/" %}
+           	<div class="update">
+        	</div>
+           {% endif %}
+       </div>
+       
+{% endblock %}

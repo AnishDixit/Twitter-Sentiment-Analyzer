@@ -1,0 +1,10 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+		<h1>This is the home page for the Dashboard module.<br>The previously searched tweets are:<br></h1>
+		{% for tweet in tweets %}
+			<p>{{tweet.Hashtag_Searched}}</p>
+		{% endfor %}
+		{% block contentDashboard %}
+		{% endblock %}
+{% endblock %}	

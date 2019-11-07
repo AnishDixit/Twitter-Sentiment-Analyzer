@@ -1,0 +1,7 @@
+{% extends 'Dashboard/home.html' %}
+{% block contentDashboard %}
+		<h1>This is the feedback history for the Dashboard module.<br>The previously inputted feedbacks are:<br></h1>
+		{% for feedback in feedbacks %}
+			<p>{{feedback.Feedback}}</p>
+		{% endfor %}
+{% endblock %}	

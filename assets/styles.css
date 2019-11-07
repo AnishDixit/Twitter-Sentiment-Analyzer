@@ -1,0 +1,21 @@
+.HomeBackground1{
+    /*background-color: #ffffff;*/
+    background-image: url(/static/homeBackground1.jpg);
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    /*color: #fff;*/
+}
+.HomeBackground2{
+    /*background-color: #ffffff;*/
+    background-image: url(/static/homeBackground2.jpg);
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    /*color: #fff;*/
+}
+.HomeBackground3{
+    /*background-color: #ffffff;*/
+    background-image: url(/static/homeBackground3.jpg);
+    background-repeat-y: no-repeat;
+    background-size: cover;
+    /*color: #fff;*/
+}

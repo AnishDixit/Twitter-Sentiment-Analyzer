@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" mediaPresentationDuration="PT11M17.633S" minBufferTime="PT6.000S">
+    <BaseURL>../</BaseURL>
+    <Period start="PT0.000S" duration="PT11M17.633S">
+        <AdaptationSet bitstreamSwitching="true">
+            <ContentComponent contentType="video"></ContentComponent>
+            <Representation id="video-1366309268" codecs="avc1.64081E,mp4a.40.2" mimeType="video/mp4" width="640" height="360" frameRate="30" startWithSAP="1" bandwidth="631000" audioSamplingRate="48000">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"></AudioChannelConfiguration>
+                <SegmentTemplate timescale="48000" media="1366309268/chop/segment-$Number$.m4s" initialization="1366309268/chop/segment-0.mp4">
+                    <SegmentTimeline>
+                        <S t="0" d="291200" r="1"></S>
+                        <S t="582400" d="289600"></S>
+                        <S t="872000" d="291200" r="6"></S>
+                        <S t="2910400" d="289600"></S>
+                        <S t="3200000" d="291200" r="9"></S>
+                        <S t="6112000" d="289600"></S>
+                        <S t="6401600" d="291200" r="88"></S>
+                        <S t="32318400" d="207999"></S>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="video-1366309321" codecs="avc1.64081F,mp4a.40.2" mimeType="video/mp4" width="960" height="540" frameRate="30" startWithSAP="1" bandwidth="1358000" audioSamplingRate="48000">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"></AudioChannelConfiguration>
+                <SegmentTemplate timescale="48000" media="1366309321/chop/segment-$Number$.m4s" initialization="1366309321/chop/segment-0.mp4">
+                    <SegmentTimeline>
+                        <S t="0" d="291200" r="1"></S>
+                        <S t="582400" d="289600"></S>
+                        <S t="872000" d="291200" r="6"></S>
+                        <S t="2910400" d="289600"></S>
+                        <S t="3200000" d="291200" r="9"></S>
+                        <S t="6112000" d="289600"></S>
+                        <S t="6401600" d="291200" r="88"></S>
+                        <S t="32318400" d="207999"></S>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="video-1366309317" codecs="avc1.640820,mp4a.40.2" mimeType="video/mp4" width="1282" height="720" frameRate="30" startWithSAP="1" bandwidth="2522000" audioSamplingRate="48000">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"></AudioChannelConfiguration>
+                <SegmentTemplate timescale="48000" media="1366309317/chop/segment-$Number$.m4s" initialization="1366309317/chop/segment-0.mp4">
+                    <SegmentTimeline>
+                        <S t="0" d="291200" r="1"></S>
+                        <S t="582400" d="289600"></S>
+                        <S t="872000" d="291200" r="6"></S>
+                        <S t="2910400" d="289600"></S>
+                        <S t="3200000" d="291200" r="9"></S>
+                        <S t="6112000" d="289600"></S>
+                        <S t="6401600" d="291200" r="88"></S>
+                        <S t="32318400" d="207999"></S>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="video-1366309266" codecs="avc1.640815,mp4a.40.2" mimeType="video/mp4" width="426" height="240" frameRate="30" startWithSAP="1" bandwidth="240000" audioSamplingRate="24000">
+                <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="1"></AudioChannelConfiguration>
+                <SegmentTemplate timescale="24000" media="1366309266/chop/segment-$Number$.m4s" initialization="1366309266/chop/segment-0.mp4">
+                    <SegmentTimeline>
+                        <S t="0" d="145600" r="1"></S>
+                        <S t="291200" d="144800"></S>
+                        <S t="436000" d="145600" r="6"></S>
+                        <S t="1455200" d="144800"></S>
+                        <S t="1600000" d="145600" r="9"></S>
+                        <S t="3056000" d="144800"></S>
+                        <S t="3200800" d="145600" r="88"></S>
+                        <S t="16159200" d="103999"></S>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+</MPD>

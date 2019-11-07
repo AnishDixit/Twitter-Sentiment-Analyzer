@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row" style="padding:5%;">
+    <div class='col-3'>
+    </div>
+    <div class='col-6'>
+        <h1>Register</h1>
+      	<form class="site-form" action="{% url 'Accounts:register' %}" method="post" enctype="multipart/form-data">
+        	{% csrf_token %}
+        	{{ form|crispy}}
+        	<input type="submit" name="submit">
+      	</form>
+    </div>
+    <div class='col-3'>
+    </div>
+</div>
+{% endblock %}
