@@ -75,10 +75,10 @@ def analyseTweets(request,hashtag):
 	
 	# accept the tweet as an input here and then apply ml on it and send a list of context with the results.
 	tweet = hashtag
-	consumer_key = "Qqu3s8I0OWEpxC4cbbCC2Bh8D" 
-	consumer_secret = "wBbdhFIm7o9HIu7qywlpvPGiHgeeEPezhMzQyeTlNB2NEVPUWc"
-	access_key = "2464758009-fvdSfd6YNtlzmFTHKRlOtBypps0R6rx9NKyxKMs"
-	access_secret = "CaX9VIccghKGvKnhyXdSscJEWWX0Hln7tg7xRt6bdV5fv"
+	consumer_key = "XXXXXXXXXXXXXXXXXXXXXXXX" 
+	consumer_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+	access_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+	access_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_key, access_secret)
 	api = tweepy.API(auth)
